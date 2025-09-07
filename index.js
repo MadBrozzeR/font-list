@@ -3,7 +3,7 @@
 const http = require('http');
 const { spawn } = require('child_process');
 
-const PARAM_RE = /^--([-\w+])(?:=["']?(.+)['"]?)?$/;
+const PARAM_RE = /^--([-\w]+)(?:=["']?(.+)['"]?)?$/;
 
 const TEMPLATE = {
   KEY_RE: /\{\{(\w+)(?::(\w+))?\}\}/g,
